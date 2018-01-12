@@ -200,6 +200,9 @@ class YamlDriver extends FileDriver
         if (isset($fieldMapping['geohash_prefix'])) {
             $mapping['geohash_prefix'] = (bool) $fieldMapping['geohash_prefix'];
         }
+        if (isset($fieldMapping['format'])) {
+            $mapping['format'] = (bool) $fieldMapping['format'];
+        }
         
         return $mapping;
     }

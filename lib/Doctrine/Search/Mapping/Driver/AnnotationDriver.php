@@ -200,6 +200,9 @@ class AnnotationDriver extends AbstractAnnotationDriver
         if (isset($fieldMapping['nullValue'])) {
             $mapping['nullValue'] = $fieldMapping['nullValue'];
         }
+        if (isset($fieldMapping['format'])) {
+            $mapping['format'] = $fieldMapping['format'];
+        }
 
         return $mapping;
     }

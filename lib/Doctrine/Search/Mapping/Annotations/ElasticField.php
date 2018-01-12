@@ -86,4 +86,9 @@ final class ElasticField extends Field
      * @var boolean
      */
     public $geohash_prefix;
+
+    /**
+     * @var string
+     */
+    public $format;
 }

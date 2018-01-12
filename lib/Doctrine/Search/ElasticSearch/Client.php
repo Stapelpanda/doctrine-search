@@ -325,6 +325,10 @@ class Client implements SearchClientInterface
             if (isset($fieldMapping['geohash_prefix'])) {
                 $properties[$propertyName]['geohash_prefix'] = $fieldMapping['geohash_prefix'];
             }
+
+            if (isset($fieldMapping['format'])) {
+                $properties[$propertyName]['format'] = $fieldMapping['format'];
+            }
         }
 
         return $properties;
