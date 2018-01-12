@@ -273,7 +273,7 @@ class Client implements SearchClientInterface
                     $properties[$propertyName]['fields'] = array_map($callback, $this->getMapping($fieldMapping['fields']));
                 }
 
-                if ($fieldMapping['type'] == 'multi_field' && isset($fieldMapping['fields'])) {
+                if (in_array($fieldMapping['type'], array('text', 'multi_field')) && isset($fieldMapping['fields'])) {
                     $properties[$propertyName]['fields'] = $this->getMapping($fieldMapping['fields']);
                 }
   
