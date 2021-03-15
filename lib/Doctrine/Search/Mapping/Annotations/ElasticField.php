@@ -55,6 +55,11 @@ final class ElasticField extends Field
     /**
      * @var string
      */
+    public $search_analyzer;
+
+    /**
+     * @var string
+     */
     public $path;
 
     /**

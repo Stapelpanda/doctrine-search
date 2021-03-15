@@ -188,6 +188,9 @@ class AnnotationDriver extends AbstractAnnotationDriver
         if (isset($fieldMapping['analyzer'])) {
             $mapping['analyzer'] = $fieldMapping['analyzer'];
         }
+        if (isset($fieldMapping['search_analyzer'])) {
+            $mapping['search_analyzer'] = $fieldMapping['search_analyzer'];
+        }
         if (isset($fieldMapping['path'])) {
             $mapping['path'] = $fieldMapping['path'];
         }

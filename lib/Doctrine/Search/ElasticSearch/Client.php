@@ -310,6 +310,10 @@ class Client implements SearchClientInterface
                 $properties[$propertyName]['analyzer'] = $fieldMapping['analyzer'];
             }
 
+            if (isset($fieldMapping['search_analyzer'])) {
+                $properties[$propertyName]['search_analyzer'] = $fieldMapping['search_analyzer'];
+            }
+
             if (isset($fieldMapping['indexName'])) {
                 $properties[$propertyName]['index_name'] = $fieldMapping['indexName'];
             }
